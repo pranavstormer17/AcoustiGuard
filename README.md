@@ -23,7 +23,8 @@ This repository automatically routes all generated artifacts into dedicated dire
 
 The following commands document the exact sequence required to reproduce this thesis experiment from start to finish.
 
-**Prerequisites:** * **OS:** Strictly optimized for Linux (e.g., CachyOS, Arch, Ubuntu). macOS is not supported.
+**Prerequisites:** 
+* **OS:** Strictly optimized for Linux (e.g., CachyOS, Arch, Ubuntu). macOS is not supported.
 * **Hardware:** NVIDIA GPU with CUDA acceleration.
 * **Network:** A stable internet connection is required for Step 1 (downloading PyTorch/CUDA binaries) and Step 5 (downloading Hugging Face architecture weights).
 
