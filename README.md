@@ -1,8 +1,14 @@
 # AcoustiGuard: Acoustic Side-Channel Attack Defense
 
-A controlled proof-of-concept for AcoustiGuard, a reactive 1/f Pink Noise masking defense against keystroke acoustic side-channel attacks (ASCA). 
+AcoustiGuard is a controlled proof-of-concept for a reactive, hardware-agnostic defense against Acoustic Side-Channel Attacks (ASCA) targeting physical keyboards. This repository demonstrates how dynamically scaled $1/f$ Pink Noise masking can mathematically degrade the feature extraction capabilities of state-of-the-art neural architectures.
 
-Evaluated on an imbalanced, Zipf-distributed dataset using EfficientNet-V2-S. To preserve numeric precision, spectrograms are processed as raw float32 arrays rather than quantized 8-bit images. A linear scale is applied post-masking to prevent audio overflow during export while preserving the waveform shape and RMS ratio. Note: This evaluation utilizes a single-session dataset; future work is required to establish cross-session generalizability.
+This project was built from the ground up, beginning with a custom, single-session dataset. To capture the precise transient acoustics of individual keystrokes, 52 specific physical keys (comprising alphanumeric, modifier, and system keys) were recorded individually. This collection was performed across two distinct acoustic environments: a controlled, quiet 'Home' environment to establish a high-fidelity baseline, and a 'Classroom' environment to simulate real-world ambient noise and acoustic domain shift. The dataset natively incorporates a Zipfian distribution, mirroring the natural frequency of English language keystrokes to ensure the evaluator does not artificially inflate accuracy by guessing high-probability keys.
+
+Unlike standard ASCA literature which frequently normalizes acoustic data into lossy 8-bit `.png` images, AcoustiGuard processes all audio strictly as uncompressed `Float32` tensors. This ensures the neural evaluator is operating on absolute acoustic physics (ranging from -80 dB to 0 dB) rather than visual compression artifacts. During the masking phase, the $1/f$ Pink Noise is mathematically scaled to precisely $2.5\times$ the ambient RMS noise floor before being mixed with the keystroke transient. A linear bounding scale is applied post-mixing to prevent digital clipping while strictly preserving the waveform geometry.
+
+The efficacy of this defense is benchmarked against a pure convolutional architecture (EfficientNet-V2-S), with further exploratory sandbox analysis against hybrid attention (CoAtNet-0) and pure transformer (ViT-B/16) paradigms. 
+
+**Note on Generalizability:** This repository represents a foundational prototype. The current evaluation relies on a single-session dataset recorded on a specific laptop chassis (Lenovo LOQ) and microphone array. While the mathematical collapse of the attacker model is absolute within this constrained environment, significant future work is required to establish true cross-session, multi-device generalizability.
 
 ## Project Structure & Outputs
 This repository automatically routes all generated artifacts into dedicated directories during execution:
@@ -24,11 +30,11 @@ The following commands document the exact sequence required to reproduce this th
 ## External Assets: Dataset & Pre-trained Models
 Due to GitHub file size constraints, the heavy acoustic datasets and neural network weights are hosted externally.
 
-* **[Download Raw Acoustic Dataset](https://drive.google.com/drive/folders/1YfgsrSxAwEKeU4eXLGgO1kh9YPdi9inT?usp=drive_link)**: Extract this folder so your local structure matches `data/raw/home/` and `data/raw/classroom/`.
-* **[Download Pre-trained Model Weights](https://drive.google.com/drive/folders/17Fhy3qAoFBH8uDD-QG3GMtA87jyf_u3s?usp=drive_link)**: Place `efficientnet_classroom.pth` and `efficientnet_home.pth` into `models/`. Place `coatnet_baseline.pth` and `vit_baseline.pth` into `models/sandbox/`.
+* **[Download Raw Acoustic Dataset](https://drive.google.com/file/d/19rVKCxq-1CxT2PDhDqhNO6jS8eLtsfjc/view?usp=drive_link)**: This archive contains the `data/` directory structure. Extract this file directly into the root folder of this repository. It will automatically merge and place the raw audio recordings into `data/raw/home/` and `data/raw/classroom/`.
+* **[Download Pre-trained Model Weights](https://drive.google.com/file/d/1HEWiOCCEMl-bKJe0nAwAI2oIbnVNLbR9/view?usp=drive_link)**: This archive contains the `models/` directory structure. Extract this file directly into the root folder of this repository. It will automatically populate the main directory with the `efficientnet.pth` files and the `models/sandbox/` directory with the `vit` and `coatnet` weights.
 
 ## Live Demonstration Video
-[![AcoustiGuard Demo](https://img.shields.io/badge/Watch-Demo_Video-red?logo=youtube)](https://youtu.be/0DB4WZswFkQ)
+[![AcoustiGuard Demo](https://img.youtube.com/vi/0DB4WZswFkQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=0DB4WZswFkQ)
 
 ### Step 1: Environment & Dependencies
 First, verify your active shell, create a fresh Python virtual environment, and install the required dependencies.
