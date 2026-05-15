@@ -1,0 +1,191 @@
+Pipeline execution log started at Wednesday 13 May 2026 06:31:49 PM IST
+[INFO] Commencing Phase 1: Baseline Evaluation
+[INFO] PHASE 1: Executing python -m src.preprocess_data
+Processing audio files:   0%|          | 0/52 [00:00<?, ?it/s]Processing audio files:   2%|▏         | 1/52 [00:02<01:56,  2.28s/it]Processing audio files:   4%|▍         | 2/52 [00:03<01:15,  1.51s/it]Processing audio files:   6%|▌         | 3/52 [00:04<01:02,  1.28s/it]Processing audio files:   8%|▊         | 4/52 [00:05<00:56,  1.19s/it]Processing audio files:  10%|▉         | 5/52 [00:06<00:56,  1.21s/it]Processing audio files:  12%|█▏        | 6/52 [00:07<00:51,  1.12s/it]Processing audio files:  13%|█▎        | 7/52 [00:08<00:49,  1.09s/it]Processing audio files:  15%|█▌        | 8/52 [00:09<00:46,  1.06s/it]Processing audio files:  17%|█▋        | 9/52 [00:10<00:42,  1.01it/s]Processing audio files:  19%|█▉        | 10/52 [00:11<00:40,  1.05it/s]Processing audio files:  21%|██        | 11/52 [00:12<00:38,  1.07it/s]Processing audio files:  23%|██▎       | 12/52 [00:13<00:43,  1.09s/it]Processing audio files:  25%|██▌       | 13/52 [00:14<00:40,  1.05s/it]Processing audio files:  27%|██▋       | 14/52 [00:15<00:38,  1.02s/it]Processing audio files:  29%|██▉       | 15/52 [00:16<00:36,  1.01it/s]Processing audio files:  31%|███       | 16/52 [00:17<00:34,  1.05it/s]Processing audio files:  33%|███▎      | 17/52 [00:18<00:33,  1.04it/s]Processing audio files:  35%|███▍      | 18/52 [00:19<00:32,  1.04it/s]Processing audio files:  37%|███▋      | 19/52 [00:20<00:34,  1.03s/it]Processing audio files:  38%|███▊      | 20/52 [00:21<00:34,  1.06s/it]Processing audio files:  40%|████      | 21/52 [00:22<00:30,  1.01it/s]Processing audio files:  42%|████▏     | 22/52 [00:23<00:31,  1.04s/it]Processing audio files:  44%|████▍     | 23/52 [00:24<00:28,  1.00it/s]Processing audio files:  46%|████▌     | 24/52 [00:25<00:28,  1.03s/it]Processing audio files:  48%|████▊     | 25/52 [00:26<00:28,  1.06s/it]Processing audio files:  50%|█████     | 26/52 [00:27<00:26,  1.02s/it]Processing audio files:  52%|█████▏    | 27/52 [00:28<00:25,  1.04s/it]Processing audio files:  54%|█████▍    | 28/52 [00:29<00:24,  1.02s/it]Processing audio files:  56%|█████▌    | 29/52 [00:30<00:24,  1.07s/it]Processing audio files:  58%|█████▊    | 30/52 [00:32<00:24,  1.11s/it]Processing audio files:  60%|█████▉    | 31/52 [00:33<00:23,  1.10s/it]Processing audio files:  62%|██████▏   | 32/52 [00:34<00:21,  1.09s/it]Processing audio files:  63%|██████▎   | 33/52 [00:35<00:19,  1.03s/it]Processing audio files:  65%|██████▌   | 34/52 [00:36<00:18,  1.01s/it]Processing audio files:  67%|██████▋   | 35/52 [00:37<00:17,  1.02s/it]Processing audio files:  69%|██████▉   | 36/52 [00:39<00:20,  1.30s/it]Processing audio files:  71%|███████   | 37/52 [00:40<00:19,  1.29s/it]Processing audio files:  73%|███████▎  | 38/52 [00:41<00:17,  1.23s/it]Processing audio files:  75%|███████▌  | 39/52 [00:42<00:16,  1.28s/it]Processing audio files:  77%|███████▋  | 40/52 [00:43<00:14,  1.25s/it]Processing audio files:  79%|███████▉  | 41/52 [00:45<00:14,  1.28s/it]Processing audio files:  81%|████████  | 42/52 [00:46<00:13,  1.31s/it]Processing audio files:  83%|████████▎ | 43/52 [00:47<00:10,  1.22s/it]Processing audio files:  85%|████████▍ | 44/52 [00:48<00:09,  1.22s/it]Processing audio files:  87%|████████▋ | 45/52 [00:49<00:07,  1.12s/it]Processing audio files:  88%|████████▊ | 46/52 [00:50<00:06,  1.07s/it]Processing audio files:  90%|█████████ | 47/52 [00:51<00:05,  1.12s/it]Processing audio files:  92%|█████████▏| 48/52 [00:53<00:04,  1.09s/it]Processing audio files:  94%|█████████▍| 49/52 [00:54<00:03,  1.16s/it]Processing audio files:  96%|█████████▌| 50/52 [00:55<00:02,  1.11s/it]Processing audio files:  98%|█████████▊| 51/52 [00:56<00:01,  1.07s/it]Processing audio files: 100%|██████████| 52/52 [00:57<00:00,  1.08s/it]Processing audio files: 100%|██████████| 52/52 [00:57<00:00,  1.10s/it]
+[INFO] Initializing preprocessing pipeline for mode: HOME
+[SUCCESS] Task completed in 58 seconds\n
+[INFO] PHASE 1: Executing python sanity_check.py
+[INFO] Initiating Pre-Flight Dataset Audit for Phase: HOME
+[INFO] Dataset validation passed. All classes meet minimum sample thresholds.
+[SUCCESS] Task completed in 0 seconds\n
+[INFO] PHASE 1: Executing python -m src.train_models
+[INFO] Initializing training sequence. Architecture: EfficientNet-V2-S | Hardware: cuda | Mode: HOME
+Epoch 01/15 - Training Loss: 2.2564 | Validation Loss: 1.4178
+Epoch 02/15 - Training Loss: 0.8775 | Validation Loss: 0.9771
+Epoch 03/15 - Training Loss: 0.4907 | Validation Loss: 0.7151
+Epoch 04/15 - Training Loss: 0.2913 | Validation Loss: 0.3962
+Epoch 05/15 - Training Loss: 0.1984 | Validation Loss: 0.3242
+Epoch 06/15 - Training Loss: 0.0674 | Validation Loss: 0.1191
+Epoch 07/15 - Training Loss: 0.0333 | Validation Loss: 0.1078
+Epoch 08/15 - Training Loss: 0.0224 | Validation Loss: 0.1010
+Epoch 09/15 - Training Loss: 0.0161 | Validation Loss: 0.0985
+Epoch 10/15 - Training Loss: 0.0166 | Validation Loss: 0.0958
+Epoch 11/15 - Training Loss: 0.0102 | Validation Loss: 0.0976
+Epoch 12/15 - Training Loss: 0.0100 | Validation Loss: 0.0952
+Epoch 13/15 - Training Loss: 0.0098 | Validation Loss: 0.0946
+Epoch 14/15 - Training Loss: 0.0103 | Validation Loss: 0.0932
+Epoch 15/15 - Training Loss: 0.0082 | Validation Loss: 0.0934
+[SUCCESS] Task completed in 1286 seconds\n
+[INFO] PHASE 1: Executing python -m src.evaluate_models
+[INFO] Executing evaluation for mode: HOME using weight state: models/efficientnet_home.pth
+
+              precision    recall  f1-score   support
+
+           0       0.94      0.97      0.95        60
+           1       0.94      0.97      0.96        70
+           2       0.98      0.92      0.95        63
+           3       0.95      0.89      0.92        45
+           4       0.85      0.98      0.91        51
+           5       1.00      0.97      0.98        59
+           6       0.93      1.00      0.96        78
+           7       0.89      0.97      0.93        77
+           8       0.98      0.82      0.89        72
+           9       0.94      0.92      0.93        73
+           a       0.91      1.00      0.95        52
+  apostrophe       0.88      1.00      0.94        82
+           b       0.86      0.96      0.91        46
+   backslash       0.98      0.98      0.98        66
+   backspace       1.00      0.98      0.99        62
+    backtick       0.98      1.00      0.99        65
+ bracketleft       1.00      0.90      0.95        61
+bracketright       0.91      0.90      0.90        68
+           c       0.94      0.98      0.96        52
+       comma       1.00      0.99      0.99        72
+           d       0.96      0.95      0.96        58
+           e       0.93      1.00      0.97        57
+       enter       1.00      0.95      0.98        65
+      equals       0.97      1.00      0.98        61
+           f       0.90      0.98      0.94        55
+           g       0.98      0.86      0.92        57
+           h       1.00      0.80      0.89        50
+      hyphen       0.92      0.97      0.94        86
+           i       0.92      0.97      0.94        68
+           j       0.94      0.95      0.94        63
+           k       0.85      0.97      0.91        64
+           l       0.99      0.95      0.97        84
+      lshift       0.98      0.98      0.98        52
+           m       0.93      0.94      0.94        54
+           n       0.89      0.85      0.87        48
+           o       0.94      0.98      0.96        63
+           p       0.99      0.99      0.99        74
+      period       0.96      0.88      0.92        84
+           q       1.00      0.98      0.99        64
+           r       0.92      0.98      0.95        47
+      rshift       1.00      1.00      1.00        67
+           s       0.96      0.90      0.93        50
+   semicolon       1.00      0.91      0.95        68
+       slash       0.95      0.96      0.96       101
+       space       1.00      1.00      1.00        93
+           t       0.97      0.94      0.95        62
+           u       0.84      0.97      0.90        60
+           v       1.00      0.94      0.97        53
+           w       1.00      0.85      0.92        52
+           x       1.00      0.98      0.99        84
+           y       0.91      0.85      0.88        74
+           z       1.00      1.00      1.00        65
+
+    accuracy                           0.95      3357
+   macro avg       0.95      0.95      0.95      3357
+weighted avg       0.95      0.95      0.95      3357
+
+
+[INFO] Spatial Acoustics Tier Report
+Tier1_BottomRow_Modifiers Macro F1: 0.9636
+Tier2_HomeRow Macro F1: 0.9357
+Tier3_TopRow Macro F1: 0.9448
+Tier4_NumberRow Macro F1: 0.9469
+
+[INFO] Executing 1000-iteration Paired Bootstrap Confidence Interval calculation
+
+Final Macro F1 Score: 0.9488
+95% Confidence Interval: [0.9404, 0.9562]
+--------------------------------------------------
+[SUCCESS] Task completed in 15 seconds\n
+[INFO] Commencing Phase 2: Defense Evaluation
+[INFO] PHASE 2: Executing python -m src.masker
+  0%|          | 0/52 [00:00<?, ?it/s]  2%|▏         | 1/52 [00:03<02:38,  3.10s/it]  4%|▍         | 2/52 [00:05<02:26,  2.92s/it]  6%|▌         | 3/52 [00:08<02:18,  2.83s/it]  8%|▊         | 4/52 [00:09<01:41,  2.12s/it] 10%|▉         | 5/52 [00:12<01:45,  2.25s/it] 12%|█▏        | 6/52 [00:12<01:21,  1.77s/it] 13%|█▎        | 7/52 [00:15<01:31,  2.03s/it] 15%|█▌        | 8/52 [00:17<01:33,  2.12s/it] 17%|█▋        | 9/52 [00:20<01:34,  2.20s/it] 19%|█▉        | 10/52 [00:22<01:37,  2.31s/it] 21%|██        | 11/52 [00:25<01:36,  2.35s/it] 23%|██▎       | 12/52 [00:27<01:37,  2.43s/it] 25%|██▌       | 13/52 [00:30<01:36,  2.48s/it] 27%|██▋       | 14/52 [00:31<01:16,  2.01s/it] 29%|██▉       | 15/52 [00:33<01:15,  2.05s/it] 31%|███       | 16/52 [00:36<01:19,  2.20s/it] 33%|███▎      | 17/52 [00:38<01:20,  2.29s/it] 35%|███▍      | 18/52 [00:40<01:17,  2.26s/it] 37%|███▋      | 19/52 [00:42<01:10,  2.15s/it] 38%|███▊      | 20/52 [00:45<01:12,  2.27s/it] 40%|████      | 21/52 [00:47<01:10,  2.26s/it] 42%|████▏     | 22/52 [00:49<01:09,  2.32s/it] 44%|████▍     | 23/52 [00:52<01:09,  2.40s/it] 46%|████▌     | 24/52 [00:54<01:06,  2.38s/it] 48%|████▊     | 25/52 [00:57<01:05,  2.41s/it] 50%|█████     | 26/52 [00:59<01:03,  2.45s/it] 52%|█████▏    | 27/52 [01:02<01:01,  2.48s/it] 54%|█████▍    | 28/52 [01:03<00:49,  2.06s/it] 56%|█████▌    | 29/52 [01:06<00:50,  2.21s/it] 58%|█████▊    | 30/52 [01:12<01:19,  3.62s/it] 60%|█████▉    | 31/52 [01:15<01:09,  3.30s/it] 62%|██████▏   | 32/52 [01:18<01:01,  3.07s/it] 63%|██████▎   | 33/52 [01:20<00:55,  2.93s/it] 65%|██████▌   | 34/52 [01:23<00:51,  2.83s/it] 67%|██████▋   | 35/52 [01:25<00:46,  2.74s/it] 69%|██████▉   | 36/52 [01:28<00:42,  2.67s/it] 71%|███████   | 37/52 [01:30<00:38,  2.58s/it] 73%|███████▎  | 38/52 [01:33<00:35,  2.55s/it] 75%|███████▌  | 39/52 [01:35<00:32,  2.51s/it] 77%|███████▋  | 40/52 [01:39<00:35,  2.97s/it] 79%|███████▉  | 41/52 [01:42<00:31,  2.90s/it] 81%|████████  | 42/52 [01:46<00:31,  3.15s/it] 83%|████████▎ | 43/52 [01:47<00:23,  2.60s/it] 85%|████████▍ | 44/52 [01:48<00:18,  2.30s/it] 87%|████████▋ | 45/52 [01:51<00:17,  2.44s/it] 88%|████████▊ | 46/52 [01:54<00:14,  2.46s/it] 90%|█████████ | 47/52 [01:56<00:11,  2.35s/it] 92%|█████████▏| 48/52 [01:57<00:08,  2.10s/it] 94%|█████████▍| 49/52 [02:03<00:09,  3.06s/it] 96%|█████████▌| 50/52 [02:06<00:06,  3.01s/it] 98%|█████████▊| 51/52 [02:08<00:02,  2.94s/it]100%|██████████| 52/52 [02:11<00:00,  2.78s/it]100%|██████████| 52/52 [02:11<00:00,  2.52s/it]
+[INFO] Initializing adaptive 1/f Pink Noise application sequence.
+[SUCCESS] Task completed in 132 seconds\n
+[INFO] PHASE 2: Executing python -m src.preprocess_data
+Processing audio files:   0%|          | 0/52 [00:00<?, ?it/s]Processing audio files:   2%|▏         | 1/52 [00:02<01:44,  2.06s/it]Processing audio files:   4%|▍         | 2/52 [00:02<01:07,  1.35s/it]Processing audio files:   6%|▌         | 3/52 [00:03<00:54,  1.11s/it]Processing audio files:   8%|▊         | 4/52 [00:04<00:47,  1.01it/s]Processing audio files:  10%|▉         | 5/52 [00:05<00:46,  1.00it/s]Processing audio files:  12%|█▏        | 6/52 [00:06<00:44,  1.04it/s]Processing audio files:  13%|█▎        | 7/52 [00:07<00:41,  1.09it/s]Processing audio files:  15%|█▌        | 8/52 [00:08<00:38,  1.14it/s]Processing audio files:  17%|█▋        | 9/52 [00:08<00:35,  1.20it/s]Processing audio files:  19%|█▉        | 10/52 [00:09<00:34,  1.22it/s]Processing audio files:  21%|██        | 11/52 [00:10<00:32,  1.28it/s]Processing audio files:  23%|██▎       | 12/52 [00:11<00:32,  1.24it/s]Processing audio files:  25%|██▌       | 13/52 [00:12<00:36,  1.07it/s]Processing audio files:  27%|██▋       | 14/52 [00:13<00:33,  1.12it/s]Processing audio files:  29%|██▉       | 15/52 [00:14<00:33,  1.10it/s]Processing audio files:  31%|███       | 16/52 [00:14<00:31,  1.16it/s]Processing audio files:  33%|███▎      | 17/52 [00:15<00:30,  1.15it/s]Processing audio files:  35%|███▍      | 18/52 [00:16<00:29,  1.14it/s]Processing audio files:  37%|███▋      | 19/52 [00:17<00:31,  1.03it/s]Processing audio files:  38%|███▊      | 20/52 [00:18<00:29,  1.07it/s]Processing audio files:  40%|████      | 21/52 [00:19<00:26,  1.15it/s]Processing audio files:  42%|████▏     | 22/52 [00:20<00:25,  1.16it/s]Processing audio files:  44%|████▍     | 23/52 [00:20<00:23,  1.24it/s]Processing audio files:  46%|████▌     | 24/52 [00:21<00:22,  1.23it/s]Processing audio files:  48%|████▊     | 25/52 [00:22<00:24,  1.12it/s]Processing audio files:  50%|█████     | 26/52 [00:23<00:23,  1.11it/s]Processing audio files:  52%|█████▏    | 27/52 [00:24<00:22,  1.10it/s]Processing audio files:  54%|█████▍    | 28/52 [00:25<00:21,  1.10it/s]Processing audio files:  56%|█████▌    | 29/52 [00:26<00:21,  1.05it/s]Processing audio files:  58%|█████▊    | 30/52 [00:27<00:20,  1.10it/s]Processing audio files:  60%|█████▉    | 31/52 [00:28<00:18,  1.15it/s]Processing audio files:  62%|██████▏   | 32/52 [00:29<00:17,  1.13it/s]Processing audio files:  63%|██████▎   | 33/52 [00:29<00:15,  1.25it/s]Processing audio files:  65%|██████▌   | 34/52 [00:30<00:13,  1.31it/s]Processing audio files:  67%|██████▋   | 35/52 [00:31<00:12,  1.31it/s]Processing audio files:  69%|██████▉   | 36/52 [00:32<00:13,  1.19it/s]Processing audio files:  71%|███████   | 37/52 [00:33<00:13,  1.15it/s]Processing audio files:  73%|███████▎  | 38/52 [00:34<00:12,  1.11it/s]Processing audio files:  75%|███████▌  | 39/52 [00:35<00:12,  1.05it/s]Processing audio files:  77%|███████▋  | 40/52 [00:36<00:11,  1.06it/s]Processing audio files:  79%|███████▉  | 41/52 [00:37<00:10,  1.02it/s]Processing audio files:  81%|████████  | 42/52 [00:38<00:10,  1.04s/it]Processing audio files:  83%|████████▎ | 43/52 [00:39<00:10,  1.18s/it]Processing audio files:  85%|████████▍ | 44/52 [00:40<00:08,  1.09s/it]Processing audio files:  87%|████████▋ | 45/52 [00:41<00:07,  1.01s/it]Processing audio files:  88%|████████▊ | 46/52 [00:42<00:05,  1.04it/s]Processing audio files:  90%|█████████ | 47/52 [00:43<00:04,  1.06it/s]Processing audio files:  92%|█████████▏| 48/52 [00:44<00:03,  1.11it/s]Processing audio files:  94%|█████████▍| 49/52 [00:45<00:02,  1.05it/s]Processing audio files:  96%|█████████▌| 50/52 [00:46<00:01,  1.08it/s]Processing audio files:  98%|█████████▊| 51/52 [00:46<00:00,  1.11it/s]Processing audio files: 100%|██████████| 52/52 [00:47<00:00,  1.15it/s]Processing audio files: 100%|██████████| 52/52 [00:47<00:00,  1.09it/s]
+[INFO] Initializing preprocessing pipeline for mode: HOME_MASKED
+[SUCCESS] Task completed in 48 seconds\n
+[INFO] PHASE 2: Executing python sanity_check.py
+[INFO] Initiating Pre-Flight Dataset Audit for Phase: HOME_MASKED
+[INFO] Dataset validation passed. All classes meet minimum sample thresholds.
+[SUCCESS] Task completed in 0 seconds\n
+[INFO] PHASE 2: Executing python -m src.evaluate_models
+[INFO] Executing evaluation for mode: HOME_MASKED using weight state: models/efficientnet_home.pth
+
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        48
+           1       0.00      0.00      0.00        43
+           2       0.00      0.00      0.00        51
+           3       0.00      0.00      0.00        19
+           4       0.00      0.00      0.00        23
+           5       0.50      0.02      0.05        41
+           6       0.00      0.00      0.00        59
+           7       0.00      0.00      0.00        59
+           8       0.00      0.00      0.00        60
+           9       0.00      0.00      0.00        64
+           a       0.00      0.00      0.00        34
+  apostrophe       0.00      0.00      0.00        46
+           b       0.00      0.00      0.00        36
+   backslash       1.00      0.02      0.04        45
+   backspace       0.00      0.00      0.00        51
+    backtick       0.00      0.00      0.00        43
+ bracketleft       1.00      0.02      0.04        50
+bracketright       0.00      0.00      0.00        53
+           c       0.00      0.00      0.00        39
+       comma       1.00      0.02      0.04        51
+           d       0.00      0.00      0.00        53
+           e       0.08      0.13      0.10        46
+       enter       0.00      0.00      0.00        52
+      equals       0.00      0.00      0.00        50
+           f       0.00      0.00      0.00        50
+           g       0.00      0.00      0.00        48
+           h       0.00      0.00      0.00        40
+      hyphen       0.00      0.00      0.00        72
+           i       0.04      0.05      0.05        57
+           j       0.00      0.00      0.00        49
+           k       0.00      0.00      0.00        55
+           l       0.00      0.00      0.00        76
+      lshift       0.00      0.00      0.00        34
+           m       0.00      0.00      0.00        42
+           n       0.00      0.00      0.00        41
+           o       0.00      0.00      0.00        55
+           p       0.06      0.87      0.12        71
+      period       0.00      0.00      0.00        66
+           q       0.00      0.00      0.00        53
+           r       0.04      0.94      0.08        35
+      rshift       0.00      0.00      0.00        48
+           s       0.00      0.00      0.00        41
+   semicolon       0.00      0.00      0.00        55
+       slash       0.00      0.00      0.00        79
+       space       0.00      0.00      0.00        72
+           t       0.17      0.08      0.11        48
+           u       1.00      0.02      0.04        54
+           v       0.00      0.00      0.00        42
+           w       0.03      0.71      0.07        31
+           x       0.00      0.00      0.00        67
+           y       0.00      0.00      0.00        51
+           z       0.00      0.00      0.00        48
+
+    accuracy                           0.05      2596
+   macro avg       0.09      0.06      0.01      2596
+weighted avg       0.09      0.05      0.01      2596
+
+
+[INFO] Spatial Acoustics Tier Report
+Tier1_BottomRow_Modifiers Macro F1: 0.0026
+Tier2_HomeRow Macro F1: 0.0000
+Tier3_TopRow Macro F1: 0.0491
+Tier4_NumberRow Macro F1: 0.0036
+
+[INFO] Executing 1000-iteration Paired Bootstrap Confidence Interval calculation
+
+Final Macro F1 Score: 0.0139
+95% Confidence Interval: [0.0096, 0.0181]
+--------------------------------------------------
+[SUCCESS] Task completed in 13 seconds\n

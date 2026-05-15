@@ -1,0 +1,19 @@
+# Heavy Artifacts (Managed via Google Drive)
+data/raw/
+data/processed/
+models/*.pth
+models/sandbox/*.pth
+
+# Python Environments & Cache
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Local Execution Tensors
+*.npy
+
+# Allow specific documentation and metric tracking
+!figures/conf_matrix_*.png
+!figures/defense_proof.png
+!results/*.json
