@@ -37,6 +37,38 @@ Due to GitHub file size constraints, the heavy acoustic datasets and neural netw
 ## Live Demonstration Video
 [![AcoustiGuard Demo](https://img.youtube.com/vi/0DB4WZswFkQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=0DB4WZswFkQ)
 
+## Empirical Visual Proof
+
+The following matrices demonstrate the efficacy of the adaptive 1/f Pink Noise masking system. By mathematically scaling the noise to $2.5\times$ the ambient RMS floor, the acoustic transient signatures are completely neutralized, forcing the attacker's prediction confidence into total disarray.
+
+<p align="center">
+  <img src="figures/conf_matrix_home.png" alt="Home Baseline Accuracy" width="45%" />
+  <img src="figures/conf_matrix_home_masked.png" alt="Home Masked Accuracy" width="45%" />
+</p>
+
+*<div align="center"><b>Figure 1:</b> The left matrix displays the unconstrained Home Baseline (95.49%), showing a strong predictive diagonal. The right matrix displays the AcoustiGuard masked evaluation (1.38%), demonstrating a complete collapse of predictive confidence.</div>*
+
+<br>
+
+<p align="center">
+  <img src="figures/conf_matrix_classroom.png" alt="Classroom Baseline Accuracy" width="45%" />
+  <img src="figures/conf_matrix_masked.png" alt="Classroom Masked Accuracy" width="45%" />
+</p>
+
+*<div align="center"><b>Figure 2:</b> The left matrix illustrates the natural degradation caused by ambient domain shift (66.45%). The right matrix shows the AcoustiGuard masked evaluation, proving the defense remains absolute (≤ 3.40%) even in noisy real-world conditions.</div>*
+
+<br>
+
+### Single-Strike Transient Destruction
+
+<p align="center">
+  <img src="figures/defense_proof.png" alt="Single-Strike Defense Proof" width="90%" />
+</p>
+
+*<div align="center"><b>Figure 3:</b> Real-time `Float32` Mel-Spectrogram analysis of a single keystroke. The baseline signature (left) is completely destroyed by the dynamic acoustic fog (right) prior to neural ingestion.</div>*
+
+---
+
 ### Step 1: Environment & Dependencies
 First, verify your active shell, create a fresh Python virtual environment, and install the required dependencies.
 
