@@ -45,7 +45,7 @@ This repository serves as the central hub for all official documentation, source
 * **[Official Conference Paper (.pdf)](https://drive.google.com/file/d/1-nYsINcdlBGTUlimBV5j4aJB3hExUL-f/view?usp=sharing)**
 * **[Conference Proceedings (.pdf)](https://drive.google.com/file/d/1_mIbLlsKkBQxwR4Il7orbe2l7cz0bHPq/view?usp=sharing)**
 * **[Project Presentation Deck (.pptx)](YOUR_DRIVE_OR_GITHUB_LINK_HERE)**
-* **[Conference Paper (.png)](https://drive.google.com/file/d/1cRbnpGu0wiYIkX0nu_MJbsITKY4Pzoxt/view?usp=sharing))**
+* **[Conference Paper (.png)](https://drive.google.com/file/d/1cRbnpGu0wiYIkX0nu_MJbsITKY4Pzoxt/view?usp=sharing)**
 
 **Execution & Outputs:**
 * **Source Code:** Available in the `src/` directory below.
