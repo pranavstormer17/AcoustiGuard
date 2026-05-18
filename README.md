@@ -37,6 +37,20 @@ Due to GitHub file size constraints, the heavy acoustic datasets and neural netw
 ## Live Demonstration Video
 [![AcoustiGuard Demo](https://img.youtube.com/vi/0DB4WZswFkQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=0DB4WZswFkQ)
 
+## Official Project & Conference Materials
+
+This repository serves as the central hub for all official documentation, source code, and outputs required for the thesis evaluation. 
+
+**Official Documentation:**
+* **[Official Conference Paper (.pdf)](https://drive.google.com/file/d/1-nYsINcdlBGTUlimBV5j4aJB3hExUL-f/view?usp=sharing)**
+* **[Conference Proceedings (.pdf)](https://drive.google.com/file/d/1_mIbLlsKkBQxwR4Il7orbe2l7cz0bHPq/view?usp=sharing)**
+* **[Project Presentation Deck (.pptx)](YOUR_DRIVE_OR_GITHUB_LINK_HERE)**
+* **[Conference Paper (.png)](https://drive.google.com/file/d/1cRbnpGu0wiYIkX0nu_MJbsITKY4Pzoxt/view?usp=sharing))**
+
+**Execution & Outputs:**
+* **Source Code:** Available in the `src/` directory below.
+* **Outputs & Results:** Available in the `results/` and `figures/` directories, with visual proofs detailed in the section below.
+
 ## Empirical Visual Proof
 
 The following matrices demonstrate the efficacy of the adaptive 1/f Pink Noise masking system. By mathematically scaling the noise to $2.5\times$ the ambient RMS floor, the acoustic transient signatures are completely neutralized, forcing the attacker's prediction confidence into total disarray.
