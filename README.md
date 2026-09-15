@@ -55,7 +55,7 @@ This repository serves as the central hub for all official documentation, source
 
 ## Empirical Visual Proof
 
-The following matrices demonstrate the efficacy of the adaptive 1/f Pink Noise masking system. By mathematically scaling the noise to $2.5\times$ the ambient RMS floor, the acoustic transient signatures are completely neutralized, forcing the attacker's prediction confidence into total disarray.
+The following matrices demonstrate the efficacy of the adaptive $1/f$ Pink Noise masking system. By mathematically scaling the noise to $2.5\times$ the ambient RMS floor, the acoustic transient signatures are completely neutralized, forcing the attacker's prediction confidence into total disarray.
 
 <p align="center">
   <img src="figures/conf_matrix_home.png" alt="Home Baseline Accuracy" width="45%" />
