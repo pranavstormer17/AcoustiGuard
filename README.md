@@ -151,9 +151,9 @@ echo "=== CLASSROOM RAW AUDIO ===" && ls data/raw/classroom/ | wc -l
 
 Execute the primary training, masking, and evaluation pipelines for both acoustic environments.
 
-> **Environment Note (Why Both Environments?):** This step fully evaluates our primary Convolutional model (EfficientNet-V2-S) on **both the Classroom and Home environments independently**. We do this by running two parallel pipelines (`run_pipeline` and `run_home_pipeline`). Executing the attack and defense in two distinct acoustic spaces mathematically proves our core thesis: the 1/f Pink Noise defense effectively collapses an attacker's accuracy regardless of ambient background noise or room reverberation.
+> **Environment Note (Why Both Environments?):** This step fully evaluates our primary Convolutional model (EfficientNet-V2-S) on **both the Classroom and Home environments independently**. We do this by running two parallel pipelines (`run_pipeline` and `run_home_pipeline`). Executing the attack and defense in two distinct acoustic spaces mathematically proves our core thesis: the $1/f$ Pink Noise defense effectively collapses an attacker's accuracy regardless of ambient background noise or room reverberation.
 
-> **Expected Warning:** During the masked phases, `sanity_check.py` may print: `[WARNING] Class '...' contains an insufficient test sample count`. Because 1/f Pink Noise physically destroys acoustic transients, the librosa onset slicer may occasionally isolate fewer than 15 valid samples for quiet keys (like `[` or `-`). The pipeline will dynamically adjust and continue successfully.
+> **Expected Warning:** During the masked phases, `sanity_check.py` may print: `[WARNING] Class '...' contains an insufficient test sample count`. Because $1/f$ Pink Noise physically destroys acoustic transients, the librosa onset slicer may occasionally isolate fewer than 15 valid samples for quiet keys (like `[` or `-`). The pipeline will dynamically adjust and continue successfully.
 
 **Option A: If you are using the Fish Shell (Native Scripts)**
 
